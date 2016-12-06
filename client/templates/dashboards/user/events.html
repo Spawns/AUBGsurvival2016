@@ -1,0 +1,14 @@
+<template name="recentEvents">
+    <div class="row">
+        <div class="col-md-12">
+            {{#each events}}
+               {{> event}}
+            {{/each}}
+        </div>
+    </div>
+</template>
+
+
+<template name="event">
+  <h3 class="event"><i class="fa white-icon fa-bolt"></i>  {{event}}  <span>{{createdOn}}</span></h3>
+</template>

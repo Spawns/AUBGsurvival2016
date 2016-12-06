@@ -1,0 +1,30 @@
+<template name="register">
+  {{#if gameRunning}}
+      <h4>Registration is closed</h4>
+  {{/if}}
+  {{#unless gameRunning}}
+          <div class="row">
+            <div class="col-sm-12">
+              <fieldset>
+                {{#if errors}}
+                    <div class="col-lg-5 col-md-push-1">
+                        <div class="col-md-12">
+                            <div class="alert alert-danger">
+                                <span class="glyphicon glyphicon-remove"></span><strong> {{errors}}</strong>
+                            </div>
+                        </div>
+                    </div>
+                {{/if}}
+
+                {{#autoForm schema="UserSchema.User" id="signupForm"}}
+                   {{> afQuickField name="email" placeholder="Email" label-class="sr-only"}}
+                   {{> afQuickField name='password' type="password" placeholder="Password" label-class="sr-only" }}
+                   {{> afQuickField name='passwordConfirmation' type="password" placeholder="Password Confirmation" label-class="sr-only"}}
+                   {{> afObjectField name='profile'}}
+                 <input type="submit" class="btn btn-info reg-btn" value="Sign up">
+               {{/autoForm}}
+           </fieldset>
+           </div>
+         </div>
+    {{/unless}}
+</template>

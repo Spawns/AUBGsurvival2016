@@ -1,0 +1,43 @@
+<template name="adminDashboard">
+    {{#if gameRunning}}
+        <button class="btn btn-danger js-btn-stop-game">Stop the game</button>
+    {{/if}}
+
+    {{#unless gameRunning}}
+        <button class="btn btn-success js-btn-start-game">Start the game</button>
+        <button class="btn btn-primary js-btn-assignUsers"> Assign the users </button>
+    {{/unless}}
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th> Names </th>
+            <th> Status </th>
+            <th> Token </th>
+            <th> Target </th>
+            <th> Hunter </th>
+          </tr>
+        </thead>
+          <tbody>
+          {{#each usersStats}}
+            {{> userInfo}}
+          {{/each}}
+        </tbody>
+      </table>
+    </div>
+
+</template>
+
+
+<template name="userInfo">
+  <tr>
+    <td> {{profile.firstName}} {{profile.lastName}} </td>
+    <td> {{profile.status}} </td>
+    <td> {{profile.token}} </td>
+    <td> {{currentTarget}} </td>
+    <td> {{currentHunter}} </td>
+    {{#unless gameRunning}}
+         <td><button class="btn btn-danger js-btn-delete-user">Delete user</button></td>
+    {{/unless}}
+  </tr>
+</template>

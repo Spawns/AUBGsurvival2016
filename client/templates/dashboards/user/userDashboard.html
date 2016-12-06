@@ -1,0 +1,46 @@
+<template name="userDashboard">
+    <div class="container">
+        {{#if gameRunning}}
+            {{#if alive}}
+                <div class="row">
+                    <div class="col-md-8">
+                        <h1 class="target-info">Your target is <span>{{target}}</span></h1>
+                        <div class="form-group row">
+                          <div class="col-md-5">
+                            <input type="text" class="targetId form-control " placeholder="Target Code">
+                          </div>
+                          <div class="col-md-3">
+                            <button class="btn btn-danger btn-block js-kill-target"><i class="fa white-icon fa-bolt"></i> Kill</button>
+                         </div>
+                      </div>
+                    </div><!-- col-md-8 -->
+                  <div class="col-md-4">
+                    <div class="row">
+                      <h4>Your personal code is:</h4>
+                    </div>
+                    <div class="row">
+                      <h2>{{token}}</h2>
+                    </div>
+                  </div>
+              </div>
+          {{/if}}
+          {{#unless alive}}
+              <h1>You are dead. <i class="fa white-icon fa-bolt"></i></h1>
+          {{/unless}}
+         <div class="row">
+                <h4>Recent events:</h4>
+                {{> recentEvents}}
+            </div>
+        {{/if}}
+
+
+
+
+        {{#unless gameRunning}}
+
+            <h4>The game has not started yet.</h4>
+
+        {{/unless}}
+    </div>
+
+</template>

@@ -1,0 +1,42 @@
+@import url(https://fonts.googleapis.com/css?family=Sarpanch:400,800|Orbitron);
+
+
+body > .container {
+    padding: 60px 15px 0;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+}
+
+html {
+  height: 100%;
+}
+body {
+  min-height: 100vh;
+}
+
+
+.turnon {
+  background-color: #676767;
+  color: white;
+  -webkit-transition: all 1500ms ease-out 1s;
+ -moz-transition: all 1500ms ease-out 1s;
+ -o-transition: all 1500ms ease-out 1s;
+ transition: all 1500ms ease-out 1s;
+}
+
+.turnon .fa {
+  color: black;
+}
+
+.turnon .glyphicon {
+  color: black;
+}
+
+.turnoff {
+  background-color: #fff;
+  color: black;
+  -webkit-transition: all 1500ms ease-out 1s;
+ -moz-transition: all 1500ms ease-out 1s;
+ -o-transition: all 1500ms ease-out 1s;
+ transition: all 1500ms ease-out 1s;
+}

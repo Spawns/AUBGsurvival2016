@@ -1,0 +1,16 @@
+
+.white-icon{
+  color: white !important;
+}
+.target-info {
+  font-size: 6em;
+
+}
+.target-info > span {
+  color: #ff4c4c;
+}
+
+
+.event > span {
+  color: #ff4c4c;
+}

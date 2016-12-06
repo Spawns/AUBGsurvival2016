@@ -1,0 +1,98 @@
+.jumbo-title{
+  font-family: 'Orbitron', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 7em !important;
+}
+.game-on .jumbo-title {
+    color: #ff4c4c !important;
+}
+
+.game-off .jumbo-title {
+    color: black;
+}
+
+.powered-by {
+  text-transform: uppercase;
+  text-align: center;
+}
+.powered-by a {
+    color: #c1c1c1;
+    text-decoration: none;
+}
+
+.powered-by a:hover
+{
+      color: #ff4c4c;
+     text-decoration:none;
+     cursor:pointer;
+}
+
+.container-cntr {
+  position: relative;
+  height: 90vh;
+}
+
+.jumbotron {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  background: transparent;
+  transform: translate(-50%,-50%);
+}
+/*game on */
+.jumbo-players-killed span {
+  color:#ff4c4c;
+}
+.jumbo-players-killed  {
+  text-align: center;
+}
+/* game off */
+.btn-sign {
+    color: #FFFFFF;
+    background-color: #FF4C4C;
+    border-color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.btn-sign:hover,
+.btn-sign:focus,
+.btn-sign:active,
+.btn-sign.active,
+.open .dropdown-toggle.btn-sign {
+    color: #FFFFFF;
+    background-color: #000000;
+    border-color: #FFFFFF;
+}
+
+.btn-sign:active,
+.btn-sign.active,
+.open .dropdown-toggle.btn-sign {
+    background-image: none;
+}
+
+.btn-sign.disabled,
+.btn-sign[disabled],
+fieldset[disabled] .btn-sign,
+.btn-sign.disabled:hover,
+.btn-sign[disabled]:hover,
+fieldset[disabled] .btn-sign:hover,
+.btn-sign.disabled:focus,
+.btn-sign[disabled]:focus,
+fieldset[disabled] .btn-sign:focus,
+.btn-sign.disabled:active,
+.btn-sign[disabled]:active,
+fieldset[disabled] .btn-sign:active,
+.btn-sign.disabled.active,
+.btn-sign[disabled].active,
+fieldset[disabled] .btn-sign.active {
+    background-color: #FF4C4C;
+    border-color: #FFFFFF;
+}
+
+.btn-sign .badge {
+    color: #FF4C4C;
+    background-color: #FFFFFF;
+}

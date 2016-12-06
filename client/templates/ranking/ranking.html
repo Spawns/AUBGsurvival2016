@@ -1,0 +1,26 @@
+<template name="ranking">
+    <div class="row">
+        <div class="row">
+          <div class="col-md-offset-4 col-md-4">
+                    <h1>Ranking</h1>
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <th> Name </th>
+                  <th> Kills </th>
+                </thead>
+                <tbody>
+                  {{#each rankings}}
+                    <tr>
+                      <td>{{profile.firstName}} {{profile.lastName}}</td>
+                      <td> <span>{{profile.kills}}</span></td>
+                    </tr>
+                  {{/each}}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+      </div>
+    </div>
+</template>
