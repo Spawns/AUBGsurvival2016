@@ -14,22 +14,6 @@
     color: black;
 }
 
-.powered-by {
-  text-transform: uppercase;
-  text-align: center;
-}
-.powered-by a {
-    color: #c1c1c1;
-    text-decoration: none;
-}
-
-.powered-by a:hover
-{
-      color: #ff4c4c;
-     text-decoration:none;
-     cursor:pointer;
-}
-
 .container-cntr {
   position: relative;
   height: 90vh;
